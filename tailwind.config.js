@@ -26,13 +26,18 @@ module.exports = {
         navy: '#0A2647',
         lnavy: '#144272',
         blue: '#205295',
-        lblue: '#2C74B3'
+        lblue: '#2C74B3',
+        lslate: '#ccd6f6',
+        lgreen: '#64ffda'
 
       },
       spacing: {
         '96': '24rem',
         '128': '32rem',
-      }
+      },
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+      },
     }
   },
   plugins: [],
