@@ -8,27 +8,27 @@ const IndexPage: React.FC<PageProps> = () => {
   return (
     <div className='bg-navy w-screen h-screen font-inter' >
        <nav>
-       <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
-              <a href="" className="text-lslate font-semibold text-lg hover:text-lgreen">
+              <a href="" className="text-white font-semibold text-lg hover:text-lgreen">
                 Daniel Park
               </a>
             </div>
             <div className="flex space-x-4">
-              <a href="#about" className="text-lslate hover:text-lgreen">
+              <a href="#about" className="text-white hover:text-lgreen">
                 About
               </a>
-              <a href="#experience" className="text-lslate hover:text-lgreen">
+              <a href="#experience" className="text-white hover:text-lgreen">
                 Experience
               </a>
-              <a href="#projects" className="text-lslate hover:text-lgreen">
+              <a href="#projects" className="text-white hover:text-lgreen">
                 Projects
               </a>
-              <a href="#skills" className="text-lslate hover:text-lgreen">
+              <a href="#skills" className="text-white hover:text-lgreen">
                 Skills
               </a>
-              <a href="#contact" className="text-lslate hover:text-lgreen">
+              <a href="#contact" className="text-white hover:text-lgreen">
                 Contact
               </a>
             </div>

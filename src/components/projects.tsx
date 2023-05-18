@@ -6,7 +6,7 @@ const Projects: React.FC = () => {
       <div className="container mx-auto">
         <div className="flex items-center justify-start">
           <h1 className="text-4xl font-bold mr-8">Welcome to My Website</h1>
-          <p> "RT-Recommendations, PROSPER, COS484 Proj, COS IW work"</p>
+          <p> "RT-Recommendations, PROSPER, this website, COS484 Proj, COS IW work"</p>
         </div>
       </div>
     </div>
