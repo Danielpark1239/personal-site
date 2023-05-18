@@ -1,21 +1,23 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true
+    es2021: true,
   },
   extends: [
     'plugin:react/recommended',
-    'standard-with-typescript'
+    'standard-with-typescript',
   ],
   overrides: [
   ],
   parserOptions: {
     ecmaVersion: 'latest',
-    sourceType: 'module'
+    sourceType: 'module',
   },
   plugins: [
-    'react'
+    'react',
   ],
   rules: {
-  }
+    'comma-dangle': ['error', 'always-multiline'],
+    'quote-props': ['error', 'as-needed', {'unnecessary': 'false'}],
+  },
 }

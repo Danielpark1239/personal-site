@@ -28,7 +28,7 @@ module.exports = {
         blue: '#205295',
         lblue: '#2C74B3',
         lslate: '#ccd6f6',
-        lgreen: '#64ffda'
+        lgreen: '#64ffda',
 
       },
       spacing: {
@@ -38,7 +38,7 @@ module.exports = {
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
       },
-    }
+    },
   },
   plugins: [],
 }
