@@ -29,7 +29,9 @@ module.exports = {
         lblue: '#2C74B3',
         lslate: '#ccd6f6',
         lgreen: '#64ffda',
-
+        lblack: '#313131',
+        gold: '#fad25a',
+        dgold: '#504107'
       },
       spacing: {
         '96': '24rem',
