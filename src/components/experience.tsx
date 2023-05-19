@@ -2,19 +2,19 @@ import React from 'react'
 
 const Experience: React.FC = () => {
   return (
-    <div className="bg-navy text-lslate py-16">
-      <h1 className="text-2xl text-white font-bold mx-32">Experience </h1>
+    <div className="bg-navy text-lslate pb-8">
+      <h1 className="text-lg text-gold uppercase mx-32 tracking-widest">Experience </h1>
       <div className="container mx-32 grid grid-cols-4 ">
         <div className="items-center justify-start col-span-1 my-8">
           <p className="text-sm w-fit">Jun 2023 - Aug 2023</p>
         </div>
-        <div className="w-fit col-span-3 my-8">
-            <h3 className="text-md text-white font-bold mb-1">Software Engineer Intern 
-            <a href="https://www.jpmorganchase.com/" target="_blank" rel="noopener noreferrer" className="nav-link hover:text-gold">
+        <div className="w-fit col-span-3 shadow-xl p-8 -ml-6">
+            <h3 className="text-md text-white font-bold mb-1">{"Software Engineer Intern "}
+            <a href="https://www.jpmorganchase.com/" target="_blank" rel="noopener noreferrer" className="nav-link hover:text-gold relative">
                @JPMorgan Chase & Co.
+               <span className="nav-link-hover"></span>
             </a>
             <i className="fas fa-arrow-up-right-from-square text-sm"></i>
-            <span className="nav-link-hover"></span>
             </h3>
             <p className="text-sm mb-1">Consumer & Community Banking, Operations Technology</p>
             <ul className="list-disc ml-6 text-sm">
@@ -32,9 +32,12 @@ const Experience: React.FC = () => {
         <div className="items-center justify-start col-span-1 my-8">
           <p className="text-sm w-fit">Nov 2022 - Present</p>
         </div>
-        <div className="w-fit col-span-3 my-8">
-          <h3 className="text-md text-white font-bold mb-1">Co-President, Senior Developer
-            <a href="https://www.tigerapps.org" target="_blank" rel="noopener noreferrer" className="nav-link hover:text-gold"> @TigerApps</a>
+        <div className="w-fit col-span-3 shadow-xl p-8 -ml-6">
+          <h3 className="text-md text-white font-bold mb-1">{"Co-President, Senior Developer "}
+            <a href="https://www.tigerapps.org" target="_blank" rel="noopener noreferrer" className="nav-link hover:text-gold relative">
+              @TigerApps
+              <span className="nav-link-hover"></span>
+            </a>
           </h3>
           <ul className="list-disc ml-6 text-sm">
             <li>Bullet 1</li>
@@ -66,9 +69,12 @@ const Experience: React.FC = () => {
         <div className="items-center justify-start col-span-1 my-8">
           <p className="text-sm w-fit">Sep 2022 - Present</p>
         </div>
-        <div className="w-fit col-span-3 my-8">
-          <h3 className="text-md text-white font-bold mb-1">Software Developer
-            <span className="text-gold"> @Hoagie Club</span>
+        <div className="w-fit col-span-3 shadow-xl p-8 -ml-6">
+          <h3 className="text-md text-white font-bold mb-1">{"Software Developer "}
+          <a href="https://hoagie.io/" target="_blank" rel="noopener noreferrer" className="nav-link hover:text-gold relative">
+              @Hoagie Club
+              <span className="nav-link-hover"></span>
+            </a>
           </h3>
           <ul className="list-disc ml-6 text-sm">
             <li>Bullet 1</li>
@@ -84,7 +90,7 @@ const Experience: React.FC = () => {
           <button disabled className="m-2 p-1.5 text-sm text-white rounded-full bg-navy border-2 border-gold">
             NextJS
           </button>
-          <button disabled className="m-2 p-1.5 text-sm text-white rounded-full bg-navy border-2 border-gold">
+          <button disabled className="m-2 p-1.5 text-sm text-white rounded-2xl bg-navy border-2 border-gold">
             Go
           </button>
           <button disabled className="m-2 p-1.5 text-sm text-white rounded-full bg-navy border-2 border-gold">
