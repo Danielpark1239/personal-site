@@ -3,32 +3,32 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Navbar: React.FC = () => {
   return (
-    <nav className='fixed top-0 bg-navy w-full shadow-lg'>
+    <nav className='fixed top-0 bg-navy w-full shadow-lg z-10'>
         <div className="container mx-auto">
             <div className="flex items-center justify-between h-16">
                 <div className="flex items-center">
-                    <a href="#about" className="p-1 text-gold font-semibold text-lg hover:text-gold">
+                    <AnchorLink href="#about" className="p-1 text-gold font-semibold text-lg hover:text-gold hover:scale-110 ease-in duration-300">
                     DanPark
-                    </a>
+                    </AnchorLink>
                 </div>
                 <div className="flex space-x-4">
                     <AnchorLink href="#about" className="p-1 nav-link text-white hover:text-gold relative">
                         About
                         <span className="nav-link-hover"></span>
                     </AnchorLink>
-                    <AnchorLink href="#experience" offset="50" className="p-1 nav-link text-white hover:text-gold relative">
+                    <AnchorLink href="#experience" offset="100" className="p-1 nav-link text-white hover:text-gold relative">
                         Experience
                         <span className="nav-link-hover"></span>
                     </AnchorLink>
-                    <AnchorLink href="#projects" className="p-1 nav-link text-white hover:text-gold relative">
+                    <AnchorLink href="#projects" offset="100" className="p-1 nav-link text-white hover:text-gold relative">
                         Projects
                         <span className="nav-link-hover"></span>
                     </AnchorLink>
-                    <AnchorLink href="#skills" className="p-1 nav-link text-white hover:text-gold relative">
+                    <AnchorLink href="#skills" offset="100" className="p-1 nav-link text-white hover:text-gold relative">
                         Skills
                         <span className="nav-link-hover"></span>
                     </AnchorLink>
-                    <AnchorLink href="#contact" className="p-1 nav-link text-white hover:text-gold relative">
+                    <AnchorLink href="#contact" offset="100" className="p-1 nav-link text-white hover:text-gold relative">
                         Contact
                         <span className="nav-link-hover"></span>
                     </AnchorLink>
