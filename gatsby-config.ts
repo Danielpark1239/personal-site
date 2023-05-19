@@ -45,6 +45,22 @@ const config: GatsbyConfig = {
     options: {
       "icon": "src/images/icon.png"
     }
+  }, {
+    resolve: 'gatsby-plugin-favicons',
+    options: {
+      logo: './src/images/icon.png',
+      appName: 'DP',
+      background: '#0A2647',
+      icons: {
+        android: true,
+        appleIcon: true,
+        appleStartup: true,
+        coast: false,
+        favicons: true,
+        yandex: false,
+        windows: true
+      }
+    }
   }, "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',
     options: {
