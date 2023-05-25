@@ -44,6 +44,16 @@ const Skills: React.FC = () => {
             <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
               <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                 <div className='m-auto'>
+                  <StaticImage src='../../public/static/typescript.png' width={64} height={64} alt='/' />
+                </div>
+                <div className='flex flex-col items-center justify-center'>
+                  <h3>TypeScript</h3>
+                </div>
+              </div>
+            </div>
+            <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+              <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+                <div className='m-auto'>
                  <StaticImage src='../../public/static/go.png' width={256} height={256} alt='/' />
                 </div>
                 <div className='flex flex-col items-center justify-center'>
@@ -111,16 +121,6 @@ const Skills: React.FC = () => {
                 </div>
                 <div className='flex flex-col items-center justify-center'>
                   <h3>Node</h3>
-                </div>
-              </div>
-            </div>
-            <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-              <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                <div className='m-auto'>
-                 <StaticImage src='../../public/static/express.png' width={64} height={64} alt='/' />
-                </div>
-                <div className='flex flex-col items-center justify-center'>
-                  <h3>Express</h3>
                 </div>
               </div>
             </div>
@@ -223,7 +223,7 @@ const Skills: React.FC = () => {
                   <StaticImage src='../../public/static/aws.png' width={512} height={512} alt='/' />
                 </div>
                 <div className='flex flex-col items-center justify-center'>
-                  <h3>AWS</h3>
+                  <h3>AWS (EB)</h3>
                 </div>
               </div>
             </div>

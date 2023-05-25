@@ -1,12 +1,12 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
-import About from "../components/about"
-import Projects from "../components/projects"
-import Experience from "../components/experience"
-import Navbar from "../components/navbar"
-import Skills from "../components/skills"
-import Contact from "../components/contact"
-import Links from "../components/links"
+import About from "../pageComponents/about"
+import Projects from "../pageComponents/projects"
+import Experience from "../pageComponents/experience"
+import Navbar from "../pageComponents/navbar"
+import Skills from "../pageComponents/skills"
+import Contact from "../pageComponents/contact"
+import Links from "../pageComponents/links"
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -37,6 +37,5 @@ export default IndexPage
 export const Head: HeadFC = () => (
   <div>
     <title>Home Page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   </div>
 )
