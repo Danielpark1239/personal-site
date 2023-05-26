@@ -29,14 +29,16 @@
     "gatsby-plugin-netlify": "^5.1.0",
     "gatsby-plugin-postcss": "^6.10.0",
     "gatsby-plugin-sharp": "^5.10.0",
+    "gatsby-remark-images-contentful": "^6.10.0",
+    "gatsby-source-contentful": "^8.10.0",
     "gatsby-source-filesystem": "^5.10.0",
     "gatsby-transformer-sharp": "^5.10.0",
+    "gatsby-transformer-sqip": "^5.10.0",
     "postcss": "^8.4.23",
     "react": "^18.2.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^18.2.0",
-    "tailwindcss": "^3.3.2",
-    "tw-elements": "^1.0.0-beta2"
+    "tailwindcss": "^3.3.2"
   },
   "devDependencies": {
     "@types/node": "^18.16.5",
