@@ -3,7 +3,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Navbar: React.FC = () => {
   return (
-    <nav className='fixed top-0 bg-navy w-full shadow-lg z-10'>
+    <nav className='fixed top-0 bg-navy w-full shadow-lg shadow-gray-400 hover:shadow-gold ease-in duration-300 z-10'>
         <div className="container mx-auto">
             <div className="flex items-center justify-between h-16">
                 <div className="flex items-center">

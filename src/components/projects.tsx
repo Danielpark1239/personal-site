@@ -1,6 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import ProjectListing from './projectListing';
+import ProjectListing from './projectListing'
 
 const Projects: React.FC = () => {
   const data = useStaticQuery(graphql`
