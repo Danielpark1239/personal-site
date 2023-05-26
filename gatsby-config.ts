@@ -62,7 +62,7 @@ const config: GatsbyConfig = {
       }
     }
   }, "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp",
-     "gatsby-plugin-mdx-source-name", {
+     "gatsby-plugin-mdx-source-name", "gatsby-plugin-netlify", {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
