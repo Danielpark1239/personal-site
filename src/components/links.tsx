@@ -7,15 +7,15 @@ const Links: React.FC = () => {
             <div className="fixed top-1/2 right-0 transform -translate-y-1/2 z-10 mr-7">
                 <div className="flex flex-col items-center space-y-6">
                     <a href="https://github.com/Danielpark1239/" target="_blank" rel="noopener noreferrer" className="nav-link relative">
-                        <i className="fab fa-github text-3xl text-white hover:text-gold"></i>
+                        <i className="fab fa-github text-3xl text-white hover:text-gold" title="GitHub"></i>
                         <span className="nav-link-hover"></span>
                     </a>
                     <a href="https://www.linkedin.com/in/danieljungpark/" target="_blank" rel="noopener noreferrer" className="nav-link relative">
-                        <i className="fab fa-linkedin text-3xl text-white hover:text-gold"></i>
+                        <i className="fab fa-linkedin text-3xl text-white hover:text-gold" title="LinkedIn"></i>
                         <span className="nav-link-hover"></span>
                     </a>
-                    <a href="mailto:danielpark1239@gmail.com" className="nav-link relative">
-                        <i className="fas fa-envelope text-3xl text-white hover:text-gold"></i>
+                    <a href="mailto:danielpark1239@gmail.com" target="_blank" rel="noopener noreferrer" className="nav-link relative">
+                        <i className="fas fa-envelope text-3xl text-white hover:text-gold" title="Email"></i>
                         <span className="nav-link-hover"></span>
                     </a>
                 </div>

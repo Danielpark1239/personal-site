@@ -14,10 +14,10 @@ const ExperienceListing: React.FC<ExperienceListingProps>  = ({ dates, role, org
   return (
     <>
         <div className="container mx-32 grid grid-cols-6 ">
-            <div className="items-center justify-start col-span-1 my-8">
+            <div className="items-center justify-start col-span-1 my-4">
                 <p className="text-sm w-fit">{ dates }</p>
             </div>
-            <div className="w-fit col-span-5 p-8">
+            <div className="w-fit col-span-5 p-4">
                 <h3 className="text-md text-white font-bold mb-1">{ role + " "}
                 <a href={ orgLink } target="_blank" rel="noopener noreferrer" className="nav-link hover:text-gold relative">
                     { '@' + orgName }
