@@ -19,11 +19,11 @@ const ExperienceListing: React.FC<ExperienceListingProps>  = ({ dates, role, org
             </div>
             <div className="w-fit col-span-5 p-4">
                 <h3 className="text-md text-white font-bold mb-1">{ role + " "}
-                <a href={ orgLink } target="_blank" rel="noopener noreferrer" className="nav-link hover:text-gold relative">
-                    { '@' + orgName }
-                    <span className="nav-link-hover"></span>
+                <a href={ orgLink } target="_blank" rel="noopener noreferrer" className="nav-link group-hover:text-gold relative group">
+                    <span className='group-hover:text-gold'>{ '@' + orgName + '   '}</span>
+                    <i className="fa-solid fa-external-link text-md text-white group-hover:text-gold" />
+                    <span className="nav-link-hover group-hover:text-gold"></span>
                 </a>
-                <i className="fas fa-arrow-up-right-from-square text-sm"></i>
                 </h3>
                 { description &&
                     <p className="text-sm mb-1">{ description }</p>
@@ -38,14 +38,14 @@ const ExperienceListing: React.FC<ExperienceListingProps>  = ({ dates, role, org
                     </ul>
                 }
                 { skills && skills.map((skillName: string, index: number) => (
-                        <button disabled className="m-2 p-1.5 text-sm text-white rounded-full bg-navy border-2 border-gold" key={index}>
+                        <button disabled className="m-2 p-1.5 text-sm font-medium text-lblack rounded-xl bg-lslate hover:bg-gold hover:scale-105 ease-in duration-300" key={index}>
                             { skillName }
                         </button>
                     ))
                 }
             </div>
         </div>
-        <hr className="h-px v-px border-0 bg-gray-400 ml-32 mr-96"/>
+        <hr className="h-px v-px border-0 bg-gray-400 ml-32 mr-96 my-4"/>
     </>
   )
 }

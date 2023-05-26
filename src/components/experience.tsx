@@ -12,9 +12,7 @@ const Experience: React.FC = () => {
         orgLink='https://www.jpmorganchase.com/'
         description='Consumer & Community Banking, Operations Technology'
         bullets={[
-          'bullet 1',
-          'Bullet 2',
-          'Bullet 3'
+          'TBD'
         ]}
         skills={['React', 'Java Spring']}
       />

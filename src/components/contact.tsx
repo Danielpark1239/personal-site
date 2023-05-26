@@ -12,7 +12,7 @@ const Contact: React.FC = () => {
             I'm graduating in May 2024 and I'm searching for full-time SWE roles. Feel free to contact me
           </h3>
           <h3>
-            via email at <span className="text-white">danielpark1239@gmail.com</span> or use any of the links on the
+            via email at <span className="text-white hover:text-gold ease-in duration-300">danielpark1239@gmail.com</span> or at any of the links on the
             <span className="text-white"> right side of the screen</span>!
           </h3>
         </div>
