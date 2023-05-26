@@ -14,14 +14,19 @@ const Projects: React.FC = () => {
               description
               order
               skills
+              pos
+              github_url
+              site_url
+              poster_url
+              paper_url
               thumbnail {
                 childImageSharp {
                   normal:gatsbyImageData(
                     layout: CONSTRAINED
                     placeholder: BLURRED
                     quality: 50
-                    height: 100
-                    width: 100
+                    height: 270
+                    width: 480
                   )
                 }
               }
@@ -31,8 +36,8 @@ const Projects: React.FC = () => {
                     layout: CONSTRAINED
                     placeholder: BLURRED
                     quality: 50
-                    height:100
-                    width:100
+                    height: 270
+                    width: 480
                   )
                 }
               }
@@ -50,19 +55,21 @@ const Projects: React.FC = () => {
         image={node.frontmatter.image.childImageSharp.normal}
         thumbnail={node.frontmatter.thumbnail.childImageSharp.normal}
         skills={node.frontmatter.skills}
-        id={node.id}
+        pos={node.frontmatter.pos}
+        github_url={node.frontmatter.github_url}
+        site_url={node.frontmatter.site_url}
+        poster_url={node.frontmatter.poster_url}
+        paper_url={node.frontmatter.paper_url}
         key={node.id}
       />
     )
   })
 
   return (
-    <div className="w-full bg-navy text-lslate pb-8">
+    <div className="w-full bg-navy text-lslate py-8">
       <h1 className="text-lg text-gold uppercase mx-32 tracking-widest">Personal Projects </h1>
-      <div className='max-w-[1240px] mx-auto px-2 py-16'>
-        <div className='mx-32 grid grid-cols-2'>
-          { projects }
-        </div>
+      <div className='flex flex-col gap-36 mx-32 max-w-[1240px] py-4'>
+        { projects }
       </div>
     </div>
 
