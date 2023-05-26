@@ -61,7 +61,8 @@ const config: GatsbyConfig = {
         windows: true
       }
     }
-  }, "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+  }, "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp",
+     "gatsby-plugin-mdx-source-name", {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
@@ -75,6 +76,20 @@ const config: GatsbyConfig = {
       "path": "./src/pages/"
     },
     __key: "pages"
+  }, {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      "name": "projects",
+      "path": "./src/projects/"
+    },
+    __key: "projects"
+  }, {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      "name": "skills",
+      "path": "./src/skills/"
+    },
+    __key: "skills"
   }]
 };
 
