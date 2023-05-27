@@ -40,7 +40,7 @@ const config: GatsbyConfig = {
           delayOnRouteUpdate: 0,
         },
       },
-    }, "gatsby-plugin-image", {
+    }, {
     resolve: 'gatsby-plugin-manifest',
     options: {
       "icon": "src/images/icon.png"
@@ -61,21 +61,13 @@ const config: GatsbyConfig = {
         windows: true
       }
     }
-  }, "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp",
-     "gatsby-plugin-mdx-source-name", "gatsby-plugin-netlify", {
+  }, {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
       "path": "./src/images/"
     },
     __key: "images"
-  }, {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "pages",
-      "path": "./src/pages/"
-    },
-    __key: "pages"
   }, {
     resolve: 'gatsby-source-filesystem',
     options: {
@@ -90,7 +82,9 @@ const config: GatsbyConfig = {
       "path": "./src/skills/"
     },
     __key: "skills"
-  }]
+  },  "gatsby-plugin-image", "gatsby-transformer-sharp", "gatsby-plugin-sharp",
+  "gatsby-plugin-mdx", "gatsby-plugin-mdx-source-name", "gatsby-plugin-netlify", 
+  ]
 };
 
 export default config;

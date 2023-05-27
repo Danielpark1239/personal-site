@@ -13,12 +13,10 @@ import Links from "../components/links"
 const IndexPage: React.FC<PageProps> = () => {
   const [mouseX, setMouseX] = useState(0)
   const [mouseY, setMouseY] = useState(0)
-  const [scrollY, setScrollY] = useState(0)
   const handleMouseMove = (event: any) => {
     const { pageX, pageY } = event
     setMouseX(pageX)
     setMouseY(pageY)
-    console.log(pageX, pageY)
   }
   useEffect(() => {
     window.addEventListener('mousemove', e => handleMouseMove(e))
