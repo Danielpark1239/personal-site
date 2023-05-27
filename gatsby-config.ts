@@ -46,22 +46,22 @@ const config: GatsbyConfig = {
       "icon": "src/images/icon.png"
     }
   }, {
-    resolve: 'gatsby-plugin-favicons',
-    options: {
-      logo: './src/images/icon.png',
-      appName: 'DP',
-      background: '#0A2647',
-      icons: {
-        android: true,
-        appleIcon: true,
-        appleStartup: true,
-        coast: false,
-        favicons: true,
-        yandex: false,
-        windows: true
-      }
-    }
-  }, {
+  //   resolve: 'gatsby-plugin-favicons',
+  //   options: {
+  //     logo: './src/images/icon.png',
+  //     appName: 'DP',
+  //     background: '#0A2647',
+  //     icons: {
+  //       android: true,
+  //       appleIcon: true,
+  //       appleStartup: true,
+  //       coast: false,
+  //       favicons: true,
+  //       yandex: false,
+  //       windows: true
+  //     }
+  //   }
+  // }, {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
