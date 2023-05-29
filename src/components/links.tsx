@@ -3,8 +3,8 @@ import React from "react"
 const Links: React.FC = () => {
     return (
         <nav>
-        <div className="relative">
-            <div className="fixed top-1/2 right-0 transform -translate-y-1/2 z-10 mr-7">
+        <div className="bg-navy hidden md:block relative">
+            <div className="fixed top-1/2 right-0 transform -translate-y-1/2 z-10 pr-8">
                 <div className="flex flex-col items-center space-y-6">
                     <a href="https://github.com/Danielpark1239/" target="_blank" rel="noopener noreferrer" className="nav-link relative">
                         <i className="fab fa-github text-3xl text-white hover:text-gold hover:scale-110 ease-in duration-300" title="GitHub"></i>

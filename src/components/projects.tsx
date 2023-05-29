@@ -66,9 +66,9 @@ const Projects: React.FC = () => {
   })
 
   return (
-    <div className="w-full bg-navy text-lslate py-8">
-      <h1 className="text-lg text-gold uppercase mx-32 tracking-widest">Personal Projects </h1>
-      <div className='flex flex-col gap-36 mx-32 max-w-[1240px] py-4'>
+    <div className="w-auto bg-navy text-lslate px-32 py-8">
+      <h1 className="text-lg text-gold uppercase tracking-widest">Personal Projects </h1>
+      <div className='flex flex-col gap-36 max-w-[1240px] py-4'>
         { projects }
       </div>
     </div>

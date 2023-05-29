@@ -23,7 +23,7 @@ const IndexPage: React.FC<PageProps> = () => {
   }, [])
 
   return (
-    <div className='group/1 relative bg-navy w-screen font-inter mx-auto shadow-lg'>
+    <div className='grid flex-col items-center group/1 relative bg-navy font-inter mx-auto shadow-lg'>
       <motion.div
         className="pointer-events-none absolute -inset-px rounded-xl opacity-0 transition duration-300 group-hover/1:opacity-100"
         style={{
@@ -38,21 +38,21 @@ const IndexPage: React.FC<PageProps> = () => {
       />
       <Navbar />
       <Links />
-      <section id="about">
+      <div id="about">
         <About />
-      </section>
-      <section id="experience">
+      </div>
+      <div id="experience">
         <Experience />
-      </section>
-      <section id="projects">
+      </div>
+      <div id="projects">
         <Projects />
-      </section>
-      <section id="skills">
+      </div>
+      <div id="skills">
         <Skills />
-      </section>     
-      <section id="contact">
+      </div>
+      <div id="contact">
         <Contact />
-      </section>
+      </div>
     </div>
   )
 }

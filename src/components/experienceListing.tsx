@@ -13,7 +13,7 @@ interface ExperienceListingProps {
 const ExperienceListing: React.FC<ExperienceListingProps>  = ({ dates, role, orgName, orgLink, description, bullets, skills }) => {
   return (
     <>
-        <div className="container mx-32 grid grid-cols-6 ">
+        <div className="container grid grid-cols-6 ">
             <div className="items-center justify-start col-span-1 my-4">
                 <p className="text-sm w-fit">{ dates }</p>
             </div>
@@ -43,9 +43,9 @@ const ExperienceListing: React.FC<ExperienceListingProps>  = ({ dates, role, org
                         </button>
                     ))
                 }
+                </div>
             </div>
-        </div>
-        <hr className="h-px v-px border-0 bg-gray-400 ml-32 mr-96 my-4"/>
+        <hr className="h-px v-px border-0 bg-gray-400 flex items-center my-4"/>
     </>
   )
 }

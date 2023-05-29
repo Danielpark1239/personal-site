@@ -4,7 +4,7 @@ import ExperienceListing from './experienceListing'
 const Experience: React.FC = () => {
   return (
     <div className="bg-navy text-lslate pb-8">
-      <h1 className="text-lg text-gold uppercase mx-32 tracking-widest">Experience </h1>
+      <h1 className="text-lg text-gold uppercase tracking-widest">Experience </h1>
       <ExperienceListing
         dates='Sep 2022 - Present'
         role='Software Engineer Intern'

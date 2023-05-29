@@ -71,15 +71,11 @@ const Skills: React.FC = () => {
       }
     )
   return (
-    <div className="bg-navy text-white py-24">
-      <div id='skills' className='w-full lg:h-screen p-2'>
-        <div className='max-w-[1240px] mx-32 flex-col justify-center h-full'>
-          <p className='text-lg -mx-2 tracking-widest uppercase text-gold'>
-            Skills
-          </p>
-          { skills }
-        </div>
-      </div>
+    <div  id='skills' className='bg-navy text-white p-2 py-24 px-32 w-full max-w-[1240px] flex-col justify-center'>
+      <p className='text-lg -mx-2 tracking-widest uppercase text-gold'>
+        Skills
+      </p>
+      { skills }
     </div>
     );
   };
