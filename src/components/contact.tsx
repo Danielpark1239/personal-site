@@ -9,14 +9,14 @@ const Contact: React.FC = () => {
         </p>
         <h3>
           <div className="hidden md:block">
-            I'm graduating in May 2024 and I'm searching for full-time SWE roles. Feel free to contact me
-            via email at <span className="text-white hover:text-gold ease-in duration-300">danielpark1239@gmail.com</span> or at any of the links on the
-            <span className="text-white hover:text-gold ease-in duration-300"> right of the screen</span>!
+            I'm graduating in May 2024 and searching for full-time SWE roles. You can reach me
+            via email at <span className="text-white hover:text-gold ease-in duration-300">danielpark1239@gmail.com</span> or through the links provided on the
+            <span className="text-white hover:text-gold ease-in duration-300"> right of the screen</span>.
           </div>
           <div className="block md:hidden">
-            I'm graduating in May 2024 and I'm searching for full-time SWE roles. Feel free to contact me
-            via email at <span className="text-white hover:text-gold ease-in duration-300">danielpark1239@gmail.com</span> or at any of the links on the
-            <span className="text-white hover:text-gold ease-in duration-300"> top of the screen</span>!
+            I'm graduating in May 2024 and searching for full-time SWE roles. You can reach me
+            via email at <span className="text-white hover:text-gold ease-in duration-300">danielpark1239@gmail.com</span> or through the links provided on the
+            <span className="text-white hover:text-gold ease-in duration-300"> top of the screen</span>.
           </div>
         </h3>
       </div>
