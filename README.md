@@ -1,5 +1,5 @@
-## Personal Portfolio Website
-Responsive website built using Gatsby, TailwindCSS, and TypeScript
+## Personal-site
+Responsive personal portfolio built using Gatsby, TypeScript, and TailwindCSS
 
 Check it out here: [daniel-park.netlify.app](https://daniel-park.netlify.app)
 
