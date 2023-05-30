@@ -24,7 +24,7 @@ const Projects: React.FC = () => {
                   normal:gatsbyImageData(
                     layout: CONSTRAINED
                     placeholder: BLURRED
-                    quality: 50
+                    quality: 75
                     height: 270
                     width: 480
                   )
@@ -35,7 +35,7 @@ const Projects: React.FC = () => {
                   normal:gatsbyImageData(
                     layout: CONSTRAINED
                     placeholder: BLURRED
-                    quality: 50
+                    quality: 75
                     height: 270
                     width: 480
                   )
@@ -66,9 +66,13 @@ const Projects: React.FC = () => {
   })
 
   return (
-    <div className="w-auto bg-navy text-lslate px-32 py-8">
-      <h1 className="text-lg text-gold uppercase tracking-widest">Personal Projects </h1>
-      <div className='flex flex-col gap-36 max-w-[1240px] py-4'>
+    <div className="w-screen bg-navy text-lslate">
+      <div className="flex flex-wrap flex-col align-center content-center justify-start">
+        <div className="w-11/12 sm:w-10/12 md:w-3/4 lg:w-3/5">
+          <h1 className="text-lg text-gold uppercase tracking-widest">Personal Projects</h1>
+        </div>
+      </div>
+      <div className='p-8 xl:px-24 flex flex-col mt-20 lg:mt-0 xs:gap-28 sm:gap-20 md:gap-24 align-center content-center justify-start py-4'>
         { projects }
       </div>
     </div>

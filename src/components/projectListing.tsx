@@ -17,131 +17,103 @@ interface ProjectListingProps {
 
 const ProjectListing: React.FC<ProjectListingProps> = ({ title, description, thumbnail, image, skills, pos, github_url, site_url, poster_url, paper_url }) => {
     if (pos === 'left') {
-        if (github_url || site_url || poster_url || paper_url) {
-            return (
-                <div className='flex -mb-4'>
-                    <div className='flex flex-col items-start justify-start relative px-4 w-2/5 rounded-xl'>
-                        <GatsbyImage className='rounded-xl shadow-lg shadow-gray-400 hover:shadow-gold hover:opacity-0 absolute top-0 left-0 opacity-100 transition-opacity hover:scale-105 ease-in-out' image={thumbnail} alt='/' /> 
-                        <GatsbyImage className='rounded-xl shadow-lg shadow-gray-400 hover:shadow-gold hover:opacity-100 absolute top-0 left-0 opacity-0 transition-opacity hover:scale-105 ease-in-out' image={image} alt='/' /> 
-                    </div>
-                    <div className='flex flex-col justify-center items-center px-4 w-3/5 mt-12'>
-                        <h3 className='text-2xl text-white tracking-wider hover:text-gold'>{title}</h3>
-                        <p className='pb-4 pt-2 text-white'>{description}</p>
-                        <div className='flex'>
-                            { github_url && <a href={github_url} target="_blank" rel="noopener noreferrer" className="nav-link relative px-2 group-hover:text-gold group">
-                                <i className="fab fa-github text-3xl text-white group-hover:text-gold hover:scale-110 ease-in duration-300" title="GitHub Repo"></i>
-                                <span className="nav-link-hover group-hover"></span>
-                            </a> }
-                            { site_url && <a href={site_url} target="_blank" rel="noopener noreferrer" className="nav-link relative px-2 group-hover:text-gold group">
-                                <i className="fas fa-globe text-3xl text-white hover:text-gold group-hover:scale-110 ease-in duration-300" title="Site Link"></i>
-                                <span className="nav-link-hover group-hover"></span>
-                            </a> }
-                            { poster_url && <a href={poster_url} target="_blank" rel="noopener noreferrer" className="nav-link relative px-2 group-hover:text-gold group">
-                                <i className="fa fa-file-pdf-o text-3xl text-white hover:text-gold group-hover:scale-110 ease-in duration-300" title="Download Poster"></i>
-                                <span className="nav-link-hover group-hover"></span>
-                            </a> }
-                            { paper_url && <a href={paper_url} target="_blank" rel="noopener noreferrer" className="nav-link relative px-2 group-hover:text-gold group">
-                                <i className="fa fa-file-pdf-o text-3xl text-white group-hover:text-gold hover:scale-110 ease-in duration-300" title="Download Paper"></i>
-                                <span className="nav-link-hover group-hover"></span>
-                            </a> }
+        return (
+            <div className='grid grid-cols-1 lg:grid-cols-9'>
+                <div className='hidden lg:flex lg:col-span-4 lg:col-start-1 2xl:col-span-3 2xl:col-start-2 flex-col items-start justify-start relative px-4 rounded-xl'>
+                    <GatsbyImage className='rounded-xl shadow-lg shadow-gray-400 hover:shadow-gold hover:opacity-0 absolute top-1/2  transform -translate-y-1/2 opacity-100 transition-opacity hover:scale-105 ease-in-out' objectFit="fill" image={thumbnail} alt='/' /> 
+                    <GatsbyImage className='rounded-xl shadow-lg shadow-gray-400 hover:shadow-gold hover:opacity-100 absolute top-1/2 transform -translate-y-1/2 opacity-0 transition-opacity hover:scale-105 ease-in-out' objectFit="fill" image={image} alt='/' /> 
+                </div>
+                <div className='relative col-span-1 lg:col-span-5 lg:col-start-5 2xl:col-span-4 flex flex-col justify-center items-center px-4 h-auto'>
+                    <div className="grid grid-rows-4 s:grid-rows-3 sm:grid-rows-2 lg:grid-rows-none">
+                        <div className='row-span-1 flex lg:hidden relative px-4 rounded-xl -mx-40 xs:-mt-24'>
+                            <GatsbyImage className='rounded-xl shadow-lg shadow-gray-400 hover:shadow-gold hover:opacity-0 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-100 transition-opacity hover:scale-105 ease-in-out' image={thumbnail} objectFit="fill" alt='/' /> 
+                            <GatsbyImage className='rounded-xl shadow-lg shadow-gray-400 hover:shadow-gold hover:opacity-100 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity hover:scale-105 ease-in-out' image={image} objectFit="fill" alt='/' /> 
                         </div>
-                        <div className='flex py-2'>
-                            { skills && skills.map((skillName: string, index: number) => (
-                                <button disabled className="m-2 p-1.5 text-sm text-lblack rounded-xl font-medium bg-lslate hover:bg-gold hover:scale-105 ease-in duration-300" key={index}>
-                                    { skillName }
-                                </button>
-                                ))
-                            }
+                        <div className="row-span-3 s:row-span-2 sm:row-span-1 flex flex-col justify-center items-center">
+                            <h3 className='text-2xl text-white tracking-wider hover:text-gold'>
+                                {title}
+                                <span className="pl-2">
+                                    { github_url && <a href={github_url} target="_blank" rel="noopener noreferrer" className="nav-link relative mx-2 group-hover:text-gold group">
+                                        <i className="fab fa-github text-3xl text-white group-hover:text-gold hover:scale-110 ease-in duration-300" title="GitHub Repo"></i>
+                                        <span className="nav-link-hover group-hover"></span>
+                                    </a> }
+                                    { site_url && <a href={site_url} target="_blank" rel="noopener noreferrer" className="nav-link relative mx-2 group-hover:text-gold group">
+                                        <i className="fas fa-globe text-3xl text-white hover:text-gold group-hover:scale-110 ease-in duration-300" title="Site Link"></i>
+                                        <span className="nav-link-hover group-hover"></span>
+                                    </a> }
+                                    { poster_url && <a href={poster_url} target="_blank" rel="noopener noreferrer" className="nav-link relative mx-2 group-hover:text-gold group">
+                                        <i className="fa fa-file-pdf-o text-3xl text-white hover:text-gold group-hover:scale-110 ease-in duration-300" title="Poster"></i>
+                                        <span className="nav-link-hover group-hover"></span>
+                                    </a> }
+                                    { paper_url && <a href={paper_url} target="_blank" rel="noopener noreferrer" className="nav-link relative mx-2 group-hover:text-gold group">
+                                        <i className="fa fa-file-pdf-o text-3xl text-white group-hover:text-gold hover:scale-110 ease-in duration-300" title="Paper"></i>
+                                        <span className="nav-link-hover group-hover"></span>
+                                    </a> }
+                                </span>
+                            </h3>
+                            <p className='pb-4 pt-2 text-lslate md:px-8 lg:px-12 xl:px-16 2xl:px-24'>{description}</p>
+                            <div className='flex flex-wrap py-2'>
+                                { skills && skills.map((skillName: string, index: number) => (
+                                    <button disabled className="m-2 p-1.5 text-sm text-lgreen rounded-xl font-medium bg-teal-400/10" key={index}>
+                                        { skillName }
+                                    </button>
+                                    ))
+                                }
+                            </div>
                         </div>
                     </div>
                 </div>
-            )
-        } else {
-            return (
-                <div className='flex mb-4'>
-                    <div className='flex flex-col items-start justify-start relative px-4 w-2/5 rounded-xl'>
-                        <GatsbyImage className='rounded-xl shadow-lg shadow-gray-400 hover:shadow-gold hover:opacity-0 absolute top-0 left-0 opacity-100 transition-opacity hover:scale-105 ease-in-out' image={thumbnail} alt='/' /> 
-                        <GatsbyImage className='rounded-xl shadow-lg shadow-gray-400 hover:shadow-gold hover:opacity-100 absolute top-0 left-0 opacity-0 transition-opacity hover:scale-105 ease-in-out' image={image} alt='/' /> 
-                    </div>
-                    <div className='flex flex-col justify-center items-center px-4 w-3/5 mt-12'>
-                        <h3 className='text-2xl text-white tracking-wider hover:text-gold'>{title}</h3>
-                        <p className='pb-4 pt-2 text-white'>{description}</p>
-                        <div className='flex'>
-                            { skills && skills.map((skillName: string, index: number) => (
-                                <button disabled className="m-2 p-1.5 text-sm text-lblack rounded-xl font-medium bg-lslate hover:bg-gold hover:scale-105 ease-in duration-300" key={index}>
-                                    { skillName }
-                                </button>
-                                ))
-                            }
-                        </div>
-                    </div>
-                </div>
-            )
-        }
+            </div>
+        )
     } else {
-        if (github_url || site_url || poster_url || paper_url) {
-            return (
-                <div className='flex -ml-32'>
-                    <div className='flex flex-col justify-center items-center px-4 w-3/5 mt-12'>
-                        <h3 className='text-2xl text-white tracking-wider hover:text-gold'>{title}</h3>
-                        <p className='pb-4 pt-2 text-white'>{description}</p>
-                        <div className='flex'>
-                            { github_url && <a href={github_url} target="_blank" rel="noopener noreferrer" className="nav-link relative px-2 group-hover:text-gold group">
-                                <i className="fab fa-github text-3xl text-white group-hover:text-gold hover:scale-110 ease-in duration-300" title="GitHub Repo"></i>
-                                <span className="nav-link-hover group-hover"></span>
-                            </a> }
-                            { site_url && <a href={site_url} target="_blank" rel="noopener noreferrer" className="nav-link relative px-2 group-hover:text-gold group">
-                                <i className="fas fa-globe text-3xl text-white group-hover:text-gold hover:scale-110 ease-in duration-300" title="Site Link"></i>
-                                <span className="nav-link-hover group-hover"></span>
-                            </a> }
-                            { poster_url && <a href={poster_url} target="_blank" rel="noopener noreferrer" className="nav-link relative px-2 group-hover:text-gold group">
-                                <i className="fa fa-file-pdf-o text-3xl text-white group-hover:text-gold hover:scale-110 ease-in duration-300" title="Poster"></i>
-                                <span className="nav-link-hover group-hover"></span>
-                            </a> }
-                            { paper_url && <a href={paper_url} target="_blank" rel="noopener noreferrer" className="nav-link relative px-2 group-hover:text-gold group">
-                                <i className="fa fa-file-pdf-o text-3xl text-white group-hover:text-gold hover:scale-110 ease-in duration-300" title="Paper"></i>
-                                <span className="nav-link-hover group-hover"></span>
-                            </a> }
+        return (
+            <div className='grid grid-cols-1 lg:grid-cols-9'>
+                <div className='relative col-span-1 lg:col-span-5 lg:col-start-1 2xl:col-span-4 2xl:col-start-2 flex flex-col justify-center items-center px-4 h-auto'>
+                    <div className="grid grid-rows-4 s:grid-rows-3 sm:grid-rows-2 lg:grid-rows-none">
+                        <div className='row-span-1 flex lg:hidden relative px-4 rounded-xl -mx-40 xs:-mt-24 mb-6'>
+                            <GatsbyImage className='rounded-xl shadow-lg shadow-gray-400 hover:shadow-gold hover:opacity-0 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-100 transition-opacity hover:scale-105 ease-in-out' image={thumbnail} objectFit="fill" alt='/' /> 
+                            <GatsbyImage className='rounded-xl shadow-lg shadow-gray-400 hover:shadow-gold hover:opacity-100 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity hover:scale-105 ease-in-out' image={image} objectFit="fill" alt='/' /> 
                         </div>
-                        <div className='flex py-2'>
-                            { skills && skills.map((skillName: string, index: number) => (
-                                <button disabled className="m-2 p-1.5 text-sm text-lblack rounded-xl font-medium bg-lslate hover:bg-gold hover:scale-105 ease-in duration-300" key={index}>
-                                    { skillName }
-                                </button>
-                                ))
-                            }
+                        <div className="row-span-3 s:row-span-2 sm:row-span-1 flex flex-col justify-center items-center">
+                            <h3 className='text-2xl text-white tracking-wider hover:text-gold'>
+                                {title}
+                                <span className="pl-2">
+                                    { github_url && <a href={github_url} target="_blank" rel="noopener noreferrer" className="nav-link relative mx-2 group-hover:text-gold group">
+                                        <i className="fab fa-github text-3xl text-white group-hover:text-gold hover:scale-110 ease-in duration-300" title="GitHub Repo"></i>
+                                        <span className="nav-link-hover group-hover"></span>
+                                    </a> }
+                                    { site_url && <a href={site_url} target="_blank" rel="noopener noreferrer" className="nav-link relative mx-2 group-hover:text-gold group">
+                                        <i className="fas fa-globe text-3xl text-white hover:text-gold group-hover:scale-110 ease-in duration-300" title="Site Link"></i>
+                                        <span className="nav-link-hover group-hover"></span>
+                                    </a> }
+                                    { poster_url && <a href={poster_url} target="_blank" rel="noopener noreferrer" className="nav-link relative mx-2 group-hover:text-gold group">
+                                        <i className="fa fa-file-pdf-o text-3xl text-white hover:text-gold group-hover:scale-110 ease-in duration-300" title="Poster"></i>
+                                        <span className="nav-link-hover group-hover"></span>
+                                    </a> }
+                                    { paper_url && <a href={paper_url} target="_blank" rel="noopener noreferrer" className="nav-link relative mx-2 group-hover:text-gold group">
+                                        <i className="fa fa-file-pdf-o text-3xl text-white group-hover:text-gold hover:scale-110 ease-in duration-300" title="Paper"></i>
+                                        <span className="nav-link-hover group-hover"></span>
+                                    </a> }
+                                </span>
+                            </h3>
+                            <p className='pb-4 pt-2 text-lslate md:px-8 lg:px-12 xl:px-16 2xl:px-24'>{description}</p>
+                            <div className='flex flex-wrap py-2'>
+                                { skills && skills.map((skillName: string, index: number) => (
+                                    <button disabled className="m-2 p-1.5 text-sm text-lgreen rounded-xl font-medium bg-teal-400/10" key={index}>
+                                        { skillName }
+                                    </button>
+                                    ))
+                                }
+                            </div>
                         </div>
-                    </div>
-                    <div className='flex flex-col items-start justify-start relative px-4 w-2/5 rounded-xl'>
-                        <GatsbyImage className='rounded-xl shadow-lg shadow-gray-400 hover:shadow-gold hover:opacity-0 absolute top-0 left-0 opacity-100 transition-opacity hover:scale-105 ease-in-out' image={thumbnail} alt='/' /> 
-                        <GatsbyImage className='rounded-xl shadow-lg shadow-gray-400 hover:shadow-gold hover:opacity-100 absolute top-0 left-0 opacity-0 transition-opacity hover:scale-105 ease-in-out' image={image} alt='/' /> 
                     </div>
                 </div>
-            )
-        } else {
-            return (
-                <div className='flex -ml-32 mb-4'>
-                    <div className='flex flex-col justify-center items-center px-4 w-3/5 mt-12'>
-                        <h3 className='text-2xl text-white tracking-wider hover:text-gold'>{title}</h3>
-                        <p className='pb-4 pt-2 text-white'>{description}</p>
-                        <div className='flex'>
-                        </div>
-                        <div className='flex py-2'>
-                            { skills && skills.map((skillName: string, index: number) => (
-                                <button disabled className="m-2 p-1.5 text-sm text-lblack rounded-xl font-medium bg-lslate hover:bg-gold hover:scale-105 ease-in duration-300" key={index}>
-                                    { skillName }
-                                </button>
-                                ))
-                            }
-                        </div>
-                    </div>
-                    <div className='flex flex-col items-start justify-start relative px-4 w-2/5 rounded-xl'>
-                        <GatsbyImage className='rounded-xl shadow-lg shadow-gray-400 hover:shadow-gold hover:opacity-0 absolute top-0 left-0 opacity-100 transition-opacity hover:scale-105 ease-in-out' image={thumbnail} alt='/' /> 
-                        <GatsbyImage className='rounded-xl shadow-lg shadow-gray-400 hover:shadow-gold hover:opacity-100 absolute top-0 left-0 opacity-0 transition-opacity hover:scale-105 ease-in-out' image={image} alt='/' /> 
-                    </div>
+                <div className='hidden lg:flex lg:col-span-4 lg:col-start-6 2xl:col-span-3 flex-col items-start justify-start relative px-4 rounded-xl'>
+                    <GatsbyImage className='rounded-xl shadow-lg shadow-gray-400 hover:shadow-gold hover:opacity-0 absolute top-1/2  transform -translate-y-1/2 opacity-100 transition-opacity hover:scale-105 ease-in-out' image={thumbnail} alt='/' /> 
+                    <GatsbyImage className='rounded-xl shadow-lg shadow-gray-400 hover:shadow-gold hover:opacity-100 absolute top-1/2  transform -translate-y-1/2 transition-opacity hover:scale-105 ease-in-out' image={image} alt='/' /> 
                 </div>
-            )
-        }
+            </div>
+        )
     }
 }
 
