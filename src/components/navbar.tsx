@@ -37,19 +37,19 @@ const Navbar: React.FC = () => {
                         About
                         <span className="nav-link-hover"></span>
                     </AnchorLink>
-                    <AnchorLink href="#experience" offset="100" className="p-1 nav-link text-white hover:text-gold relative">
+                    <AnchorLink href="#experience" offset="120" className="p-1 nav-link text-white hover:text-gold relative">
                         Experience
                         <span className="nav-link-hover"></span>
                     </AnchorLink>
-                    <AnchorLink href="#projects" offset="100" className="p-1 nav-link text-white hover:text-gold relative">
+                    <AnchorLink href="#projects" offset="85" className="p-1 nav-link text-white hover:text-gold relative">
                         Projects
                         <span className="nav-link-hover"></span>
                     </AnchorLink>
-                    <AnchorLink href="#skills" offset="100" className="p-1 nav-link text-white hover:text-gold relative">
+                    <AnchorLink href="#skills" offset="120" className="p-1 nav-link text-white hover:text-gold relative">
                         Skills
                         <span className="nav-link-hover"></span>
                     </AnchorLink>
-                    <AnchorLink href="#contact" offset="100" className="p-1 nav-link text-white hover:text-gold relative">
+                    <AnchorLink href="#contact" offset="120" className="p-1 nav-link text-white hover:text-gold relative">
                         Contact
                         <span className="nav-link-hover"></span>
                     </AnchorLink>

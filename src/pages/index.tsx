@@ -23,7 +23,7 @@ const IndexPage: React.FC<PageProps> = () => {
   }, [])
 
   return (
-    <div className='grid flex-col items-center group/1 relative bg-navy font-inter mx-auto shadow-lg'>
+    <div className='grid flex-col flex-wrap items-center group/1 relative bg-navy font-inter shadow-lg overflow-hidden'>
       <motion.div
         className="pointer-events-none absolute -inset-px rounded-xl opacity-0 transition duration-300 group-hover/1:opacity-100"
         style={{
