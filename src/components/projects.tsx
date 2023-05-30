@@ -21,12 +21,19 @@ const Projects: React.FC = () => {
               paper_url
               thumbnail {
                 childImageSharp {
-                  normal:gatsbyImageData(
+                  smaller:gatsbyImageData(
                     layout: CONSTRAINED
                     placeholder: BLURRED
                     quality: 100
                     width: 368
                     height: 207
+                  )
+                  bigger:gatsbyImageData(
+                    layout: CONSTRAINED
+                    placeholder: BLURRED
+                    quality: 100
+                    width: 480
+                    height: 270
                   )
                 }
               }
@@ -41,7 +48,7 @@ const Projects: React.FC = () => {
       <ProjectListing 
         title={node.frontmatter.title} 
         description={node.frontmatter.description} 
-        thumbnail={node.frontmatter.thumbnail.childImageSharp.normal}
+        thumbnail={node.frontmatter.thumbnail.childImageSharp}
         skills={node.frontmatter.skills}
         pos={node.frontmatter.pos}
         github_url={node.frontmatter.github_url}
