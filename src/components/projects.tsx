@@ -63,7 +63,7 @@ const Projects: React.FC = () => {
   return (
     <div className="w-screen bg-navy text-lslate">
       <div className="flex flex-wrap flex-col align-center content-center justify-start">
-        <div className="w-11/12 sm:w-10/12 md:w-3/4 lg:w-3/5 mb-12 xs:mb-0">
+        <div className="w-11/12 sm:w-10/12 md:w-3/4 lg:w-3/5 mb-12 sm:mb-0">
           <h1 className="text-lg text-gold uppercase tracking-widest">Personal Projects</h1>
         </div>
       </div>
