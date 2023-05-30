@@ -23,7 +23,7 @@ const ProjectListing: React.FC<ProjectListingProps> = ({ title, description, thu
                 </div>
                 <div className='relative col-span-1 lg:col-span-5 lg:col-start-5 2xl:col-span-4 flex justify-center items-center px-4 h-auto'>
                     <div className="grid grid-rows-4 s:grid-rows-3 sm:grid-rows-2 lg:grid-rows-none">
-                        <div className='row-span-1 flex lg:hidden relative px-4 rounded-xl mb-16 md:my-0 -mx-40 xs:-mt-24'>
+                        <div className='row-span-1 flex lg:hidden relative px-4 rounded-xl my-16 md:my-0 -mx-40 xs:-mt-24 mb-6'>
                             <GatsbyImage className='rounded-xl shadow-lg shadow-gray-400 hover:shadow-gold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hover:scale-105 ease-in-out duration-300' image={thumbnail} objectFit="fill" alt='/' />  
                         </div>
                         <div className="row-span-3 s:row-span-2 sm:row-span-1 flex flex-col justify-center items-center">
