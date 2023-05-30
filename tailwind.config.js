@@ -6,6 +6,8 @@ module.exports = {
   ],
   theme: {
     screens: {
+      'xs': '350px',
+      's': '430px',
       sm: '640px',
       md: '768px',
       lg: '1024px',
@@ -24,8 +26,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        navy: '#0A2647',
-        lnavy: '#144272',
+        navy: '#071a31',
+        lnavy: '#0a2647',
         blue: '#205295',
         lblue: '#2C74B3',
         lslate: '#ccd6f6',
