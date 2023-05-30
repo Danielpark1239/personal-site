@@ -29,7 +29,9 @@ const Navbar: React.FC = () => {
                 </div>
                 <div onClick={()=>setOpen(!open)} className='p-1 text-gold text-2xl cursor-pointer md:hidden flex items-center w-10 h-10'>
                     {
-                        open ? <XMarkIcon/> : <Bars3BottomRightIcon />
+                        open
+                            ? <i className="fa-solid fa-times" title="Open Menu"></i>
+                            : <i className="fa-solid fa-bars" title="Close Menu"></i>
                     }
                 </div>
                 <div className="hidden md:flex bg-navy items-center space-x-4 justify-between h-16">
