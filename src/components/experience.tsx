@@ -3,7 +3,7 @@ import ExperienceListing from './experienceListing'
 
 const Experience: React.FC = () => {
   return (
-    <div className="w-screen bg-navy flex flex-col flex-wrap align-center content-center justify-start text-lslate pb-8">
+    <div className="w-screen bg-navy flex flex-col flex-wrap align-center content-center justify-start text-lslate pb-8 mb-16">
       <div className="w-11/12 sm:w-10/12 md:w-3/4 lg:w-3/5">
         <h1 className="text-lg text-gold uppercase tracking-widest">Experience </h1>
         <ExperienceListing
