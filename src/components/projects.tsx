@@ -24,18 +24,7 @@ const Projects: React.FC = () => {
                   normal:gatsbyImageData(
                     layout: CONSTRAINED
                     placeholder: BLURRED
-                    quality: 75
-                    height: 270
-                    width: 480
-                  )
-                }
-              }
-              image {
-                childImageSharp {
-                  normal:gatsbyImageData(
-                    layout: CONSTRAINED
-                    placeholder: BLURRED
-                    quality: 75
+                    quality: 100
                     height: 270
                     width: 480
                   )
@@ -52,7 +41,6 @@ const Projects: React.FC = () => {
       <ProjectListing 
         title={node.frontmatter.title} 
         description={node.frontmatter.description} 
-        image={node.frontmatter.image.childImageSharp.normal}
         thumbnail={node.frontmatter.thumbnail.childImageSharp.normal}
         skills={node.frontmatter.skills}
         pos={node.frontmatter.pos}
@@ -72,7 +60,7 @@ const Projects: React.FC = () => {
           <h1 className="text-lg text-gold uppercase tracking-widest">Personal Projects</h1>
         </div>
       </div>
-      <div className='p-8 xl:px-24 flex flex-col mt-20 lg:mt-0 xs:gap-28 sm:gap-20 md:gap-24 align-center content-center justify-start py-4'>
+      <div className='p-8 xl:px-24 flex flex-col xs:mt-12 s:mt-20 lg:mt-0 xs:gap-28 sm:gap-20 md:gap-24 align-center content-center justify-start py-4'>
         { projects }
       </div>
     </div>
