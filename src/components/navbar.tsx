@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState } from 'react'
-import { Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/solid'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Navbar: React.FC = () => {
@@ -27,7 +26,7 @@ const Navbar: React.FC = () => {
                         <span className="nav-link-hover"></span>
                     </a>
                 </div>
-                <div onClick={()=>setOpen(!open)} className='p-1 text-gold text-2xl cursor-pointer md:hidden flex items-center w-10 h-10'>
+                <div onClick={()=>setOpen(!open)} className='p-1 text-gold text-2xl cursor-pointer md:hidden flex items-center'>
                     {
                         open
                             ? <i className="fa-solid fa-times" title="Open Menu"></i>
