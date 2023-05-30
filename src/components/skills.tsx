@@ -17,7 +17,7 @@ const Skills: React.FC = () => {
                     normal:gatsbyImageData(
                       layout: CONSTRAINED
                       placeholder: BLURRED
-                      quality: 50
+                      quality: 100
                       height: 64
                       width: 64
                     )
@@ -31,7 +31,7 @@ const Skills: React.FC = () => {
                     normal:gatsbyImageData(
                       layout: CONSTRAINED
                       placeholder: BLURRED
-                      quality: 50
+                      quality: 100
                       height: 64
                       width: 64
                     )
@@ -45,7 +45,7 @@ const Skills: React.FC = () => {
                     normal:gatsbyImageData(
                       layout: CONSTRAINED
                       placeholder: BLURRED
-                      quality: 50
+                      quality: 100
                       height: 64
                       width: 64
                     )
@@ -71,11 +71,13 @@ const Skills: React.FC = () => {
       }
     )
   return (
-    <div  id='skills' className='bg-navy text-white p-2 py-24 px-32 w-full max-w-[1240px] flex-col justify-center'>
-      <p className='text-lg -mx-2 tracking-widest uppercase text-gold'>
-        Skills
-      </p>
-      { skills }
+    <div  id='skills' className='w-screen grid grid-cols-11 md:grid-cols-8 xl:grid-cols-7 2xl:grid-cols-11 bg-navy text-white p-2 py-24 flex-col justify-center'>
+      <div className="col-span-9 col-start-2 md:col-span-6 md:col-start-2 xl:col-start-2 xl:col-span-5 2xl:col-start-3 2xl:col-span-7">
+        <p className='text-lg -mx-2 tracking-widest uppercase text-gold'>
+          Skills
+        </p>
+        { skills }
+      </div>
     </div>
     );
   };
