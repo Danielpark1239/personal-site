@@ -15,7 +15,7 @@ const Experience: React.FC = () => {
           bullets={[
             'TBD'
           ]}
-          skills={['React', 'Java Spring']}
+          skills={['TypeScript', 'React', 'Sass', 'Java', 'Node.js', 'Spring Boot', 'Moneta Boot', 'Maven', 'Jenkins']}
           hr
         />
         <ExperienceListing
@@ -41,7 +41,7 @@ const Experience: React.FC = () => {
             'Spearheaded and shipped a scheduled send function for Hoagie Mail, impacting over 100 daily emails.',
             'Implemented local development user mocking on top of auth0, streamlining the development process.'
           ]}
-          skills={['NextJS', 'TypeScript', 'Evergreen UI', 'Go', 'MongoDB', 'Netlify', 'Heroku']}
+          skills={['Next.js', 'TypeScript', 'Evergreen UI', 'Go', 'MongoDB', 'Netlify', 'Heroku']}
         />
       </div>
     </div>
