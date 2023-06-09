@@ -15,7 +15,7 @@ const Experience: React.FC = () => {
           bullets={[
             'TBD'
           ]}
-          skills={['TypeScript', 'React', 'Sass', 'Java', 'Node.js', 'Spring Boot', 'Moneta Boot', 'Maven', 'Jenkins']}
+          skills={['TypeScript', 'React', 'Sass', 'Java', 'Node.js', 'Spring Boot', 'Maven', 'Jenkins']}
           hr
         />
         <ExperienceListing
