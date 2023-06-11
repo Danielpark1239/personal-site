@@ -39,9 +39,22 @@ const Experience: React.FC = () => {
           bullets={[
             'Develop a system of integrated campus applications utilizing shared UI elements and APIs, serving 5k+ students.',
             'Spearheaded and shipped a scheduled send function for Hoagie Mail, impacting over 100 daily emails.',
-            'Implemented local development user mocking on top of auth0, streamlining the development process.'
+            'Implemented local development user mocking on top of auth0, streamlining the development and testing process.'
           ]}
           skills={['Next.js', 'TypeScript', 'Evergreen UI', 'Go', 'MongoDB', 'Netlify', 'Heroku']}
+          hr
+        />
+        <ExperienceListing
+          dates='Jan 2022 - Jun 2023'
+          role='Undergraduate Grader'
+          orgName='Princeton University Department of Computer Science'
+          orgLink='https://www.cs.princeton.edu/'
+          bullets={[
+            'Evaluated and graded student assignments for COS217: Introduction to Programming Systems.',
+            'Reviewed source code written in C and provided written feedback to students on a regular basis.',
+            'Engaged in weekly meetings with the course staff and coordinated with grading managers and preceptors.'
+          ]}
+          skills={['C', 'GDB', 'Emacs', 'Unix', 'Bash']}
         />
       </div>
     </div>
