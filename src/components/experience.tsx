@@ -7,7 +7,7 @@ const Experience: React.FC = () => {
       <div className="w-11/12 sm:w-10/12 md:w-3/4 lg:w-3/5">
         <h1 className="text-lg text-gold uppercase tracking-widest">Experience </h1>
         <ExperienceListing
-          dates='Sep 2022 - Present'
+          dates='Jun 2023 - Present'
           role='Software Engineer Intern'
           orgName='JPMorgan Chase & Co.'
           orgLink='https://www.jpmorganchase.com/'

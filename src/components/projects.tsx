@@ -19,6 +19,7 @@ const Projects: React.FC = () => {
               site_url
               poster_url
               paper_url
+              picture_url
               thumbnail {
                 childImageSharp {
                   smaller:gatsbyImageData(
@@ -55,6 +56,7 @@ const Projects: React.FC = () => {
         site_url={node.frontmatter.site_url}
         poster_url={node.frontmatter.poster_url}
         paper_url={node.frontmatter.paper_url}
+        picture_url={node.frontmatter.picture_url}
         key={node.id}
       />
     )

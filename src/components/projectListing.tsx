@@ -11,20 +11,35 @@ interface ProjectListingProps {
     site_url?: string
     poster_url?: string
     paper_url?: string
+    picture_url?: string
 }
 
-const ProjectListing: React.FC<ProjectListingProps> = ({ title, description, thumbnail, skills, pos, github_url, site_url, poster_url, paper_url }) => {
+const ProjectListing: React.FC<ProjectListingProps> = ({ title, description, thumbnail, skills, pos, github_url, site_url, poster_url, paper_url, picture_url }) => {
     if (pos === 'left') {
         return (
             <div className='grid grid-cols-1 lg:grid-cols-9'>
-                <div className='hidden lg:flex lg:col-span-4 lg:col-start-1 2xl:col-span-3 2xl:col-start-2 items-start justify-start relative px-4 rounded-xl'>
-                    <GatsbyImage className='rounded-xl shadow-lg shadow-gray-400 hover:shadow-gold absolute top-1/2  transform -translate-y-1/2 hover:scale-105 ease-in-out duration-300' objectFit="fill" image={thumbnail.bigger} alt='/' /> 
-                </div>
+                {picture_url && 
+                    <a className='hidden lg:flex lg:col-span-4 lg:col-start-1 2xl:col-span-3 2xl:col-start-2 items-start justify-start relative px-4 rounded-xl' href={picture_url} target='_blank' rel='noopener noreferrer'>
+                        <GatsbyImage className='rounded-xl shadow-lg shadow-gray-400 hover:shadow-gold absolute top-1/2  transform -translate-y-1/2 hover:scale-105 ease-in-out duration-300' objectFit="fill" image={thumbnail.bigger} alt='/' /> 
+                    </a>
+                }
+                {!picture_url && 
+                    <div className='hidden lg:flex lg:col-span-4 lg:col-start-1 2xl:col-span-3 2xl:col-start-2 items-start justify-start relative px-4 rounded-xl'>
+                        <GatsbyImage className='rounded-xl shadow-lg shadow-gray-400 hover:shadow-gold absolute top-1/2  transform -translate-y-1/2 hover:scale-105 ease-in-out duration-300' objectFit="fill" image={thumbnail.bigger} alt='/' /> 
+                    </div>
+                }
                 <div className='relative col-span-1 lg:col-span-5 lg:col-start-5 2xl:col-span-4 flex justify-center items-center px-4 h-auto'>
                     <div className="mb-8 sm:mb-0 grid grid-rows-4 s:grid-rows-3 sm:grid-rows-2 lg:grid-rows-none">
-                        <div className='row-span-1 flex lg:hidden relative px-4 rounded-xl my-16 md:my-0 -mx-40 xs:-mt-24 mb-6'>
-                            <GatsbyImage className='rounded-xl shadow-lg shadow-gray-400 hover:shadow-gold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hover:scale-105 ease-in-out duration-300' image={thumbnail.smaller} objectFit="fill" alt='/' />  
-                        </div>
+                        {picture_url &&
+                            <a className='row-span-1 flex lg:hidden relative px-4 rounded-xl my-16 md:my-0 -mx-40 xs:-mt-24 mb-6' href={picture_url} target='_blank' rel='noopener noreferrer'>
+                                <GatsbyImage className='rounded-xl shadow-lg shadow-gray-400 hover:shadow-gold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hover:scale-105 ease-in-out duration-300' image={thumbnail.smaller} objectFit="fill" alt='/' />  
+                            </a>
+                        }
+                        {!picture_url && 
+                            <div className='row-span-1 flex lg:hidden relative px-4 rounded-xl my-16 md:my-0 -mx-40 xs:-mt-24 mb-6'>
+                                <GatsbyImage className='rounded-xl shadow-lg shadow-gray-400 hover:shadow-gold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hover:scale-105 ease-in-out duration-300' image={thumbnail.smaller} objectFit="fill" alt='/' />  
+                            </div>
+                        }
                         <div className="row-span-3 s:row-span-2 sm:row-span-1 flex flex-col justify-center items-center">
                             <h3 className='text-2xl text-white tracking-wider hover:text-gold'>
                                 {title}
@@ -66,9 +81,16 @@ const ProjectListing: React.FC<ProjectListingProps> = ({ title, description, thu
             <div className='grid grid-cols-1 lg:grid-cols-9'>
                 <div className='relative col-span-1 lg:col-span-5 lg:col-start-1 2xl:col-span-4 2xl:col-start-2 flex flex-col justify-center items-center px-4 h-auto'>
                     <div className="mb-8 sm:mb-0 grid grid-rows-4 s:grid-rows-3 sm:grid-rows-2 lg:grid-rows-none">
-                        <div className='row-span-1 flex lg:hidden relative px-4 rounded-xl my-16 md:my-0 -mx-40 xs:-mt-24 mb-6'>
-                            <GatsbyImage className='rounded-xl shadow-lg shadow-gray-400 hover:shadow-gold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hover:scale-105 ease-in-out duration-300' image={thumbnail.smaller} alt='/' />
-                        </div>
+                        {picture_url &&
+                            <a className='row-span-1 flex lg:hidden relative px-4 rounded-xl my-16 md:my-0 -mx-40 xs:-mt-24 mb-6' href={picture_url} target='_blank' rel='noopener noreferrer'>
+                                <GatsbyImage className='rounded-xl shadow-lg shadow-gray-400 hover:shadow-gold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hover:scale-105 ease-in-out duration-300' image={thumbnail.smaller} alt='/' />
+                            </a>
+                        }
+                        {!picture_url &&
+                            <div className='row-span-1 flex lg:hidden relative px-4 rounded-xl my-16 md:my-0 -mx-40 xs:-mt-24 mb-6'>
+                                <GatsbyImage className='rounded-xl shadow-lg shadow-gray-400 hover:shadow-gold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hover:scale-105 ease-in-out duration-300' image={thumbnail.smaller} alt='/' />
+                            </div>
+                        }
                         <div className="row-span-3 s:row-span-2 sm:row-span-1 flex flex-col justify-center items-center">
                             <h3 className='text-2xl text-white tracking-wider hover:text-gold'>
                                 {title}
@@ -103,9 +125,16 @@ const ProjectListing: React.FC<ProjectListingProps> = ({ title, description, thu
                         </div>
                     </div>
                 </div>
-                <div className='hidden lg:flex lg:col-span-4 lg:col-start-6 2xl:col-span-3 items-start justify-start relative px-4 rounded-xl'>
-                    <GatsbyImage className='rounded-xl shadow-lg shadow-gray-400 hover:shadow-gold absolute top-1/2  transform -translate-y-1/2 hover:scale-105 ease-in-out duration-300' image={thumbnail.bigger} alt='/' /> 
-                </div>
+                {picture_url &&
+                    <a className='hidden lg:flex lg:col-span-4 lg:col-start-6 2xl:col-span-3 items-start justify-start relative px-4 rounded-xl' href={picture_url} target='_blank' rel='noopener noreferrer'>
+                        <GatsbyImage className='rounded-xl shadow-lg shadow-gray-400 hover:shadow-gold absolute top-1/2  transform -translate-y-1/2 hover:scale-105 ease-in-out duration-300' image={thumbnail.bigger} alt='/' /> 
+                    </a>
+                }
+                {!picture_url &&
+                    <div className='hidden lg:flex lg:col-span-4 lg:col-start-6 2xl:col-span-3 items-start justify-start relative px-4 rounded-xl'>
+                        <GatsbyImage className='rounded-xl shadow-lg shadow-gray-400 hover:shadow-gold absolute top-1/2  transform -translate-y-1/2 hover:scale-105 ease-in-out duration-300' image={thumbnail.bigger} alt='/' /> 
+                    </div>
+                }
             </div>
         )
     }
