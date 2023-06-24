@@ -13,7 +13,9 @@ const Experience: React.FC = () => {
           orgLink='https://www.jpmorganchase.com/'
           description='Consumer & Community Banking, Operations Technology'
           bullets={[
-            'TBD'
+            'Execute 2 core full-stack projects to streamline the creation of 200+ servicing modules over the next 5 years and standardize cross-cutting functionality through shared Java/JavaScript libraries, impacting over 40 teams.',
+            'Configured a CI/CD pipeline using Jenkins and AWS, ensuring efficient builds and deploys of Maven artifacts.',
+            'Collaborate with fellow interns and product owners in agile teams, driving progress through two-week sprints.'
           ]}
           skills={['TypeScript', 'React', 'Sass', 'Java', 'Node.js', 'Spring Boot', 'Maven', 'Jenkins']}
           hr
