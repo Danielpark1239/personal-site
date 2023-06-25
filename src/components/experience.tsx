@@ -13,7 +13,7 @@ const Experience: React.FC = () => {
           orgLink='https://www.jpmorganchase.com/'
           description='Consumer & Community Banking, Operations Technology'
           bullets={[
-            'Execute 2 core full-stack projects to streamline the creation of 200+ servicing modules over the next 5 years and standardize cross-cutting functionality through shared Java/JavaScript libraries, impacting over 40 teams.',
+            'Executing 2 core full-stack projects to streamline the creation of 200+ servicing modules over the next 5 years and standardize cross-cutting functionality through shared Java/JavaScript libraries, impacting over 40 teams.',
             'Configured a CI/CD pipeline using Jenkins and AWS, ensuring efficient builds and deploys of Maven artifacts.',
             'Collaborate with fellow interns and product owners in agile teams, driving progress through two-week sprints.'
           ]}
@@ -52,8 +52,7 @@ const Experience: React.FC = () => {
           orgName='Princeton University Department of Computer Science'
           orgLink='https://www.cs.princeton.edu/'
           bullets={[
-            'Evaluated and graded student assignments for COS217: Introduction to Programming Systems.',
-            'Reviewed source code written in C and provided written feedback to students on a regular basis.',
+            'Graded and revised student assignments for Intro to Programming Systems, reviewing ~1,000 lines of C code weekly.',
             'Engaged in weekly meetings with the course staff and coordinated with grading managers and preceptors.'
           ]}
           skills={['C', 'GDB', 'Emacs', 'Unix', 'Bash']}

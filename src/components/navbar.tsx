@@ -104,7 +104,7 @@ const Navbar: React.FC = () => {
               <span className="nav-link-hover"></span>
             </AnchorLink>
             <a
-              href="https://drive.google.com/file/d/1sHwWAdOxbAWN9tmbF9rX0ZTI96cZgQJv/view?usp=sharing"
+              href="https://drive.google.com/file/d/1_DoICNEHUWFPdVpemkkMlgnw5ZjC1w3e/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="nav-link rounded border-solid border-2 p-1 z-1 border-gold text-gold hover:bg-gold hover:text-navy transition relative"
@@ -159,7 +159,7 @@ const Navbar: React.FC = () => {
                 <span className="nav-link-hover"></span>
               </AnchorLink>
               <a
-                href="https://drive.google.com/file/d/1sHwWAdOxbAWN9tmbF9rX0ZTI96cZgQJv/view?usp=sharing"
+                href="https://drive.google.com/file/d/1_DoICNEHUWFPdVpemkkMlgnw5ZjC1w3e/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="nav-link rounded border-solid border-2 p-1 z-1 border-gold text-gold hover:bg-gold hover:text-navy transition relative"
