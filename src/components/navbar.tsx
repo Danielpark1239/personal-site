@@ -4,6 +4,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Navbar: React.FC = () => {
     const [open, setOpen] = useState(false);
+    const resumeLink="https://drive.google.com/file/d/1_DoICNEHUWFPdVpemkkMlgnw5ZjC1w3e/view?usp=sharing"
     return (
       <nav className="fixed top-0 bg-navy w-full px-2 sm:px-8 md:px-16 shadow-lg shadow-gray-400 hover:shadow-gold ease-in duration-300 z-10">
         <div className="flex flex-wrap items-center justify-between mx-auto p-4">
@@ -17,7 +18,7 @@ const Navbar: React.FC = () => {
           </div>
           <div className="flex md:hidden flex-row items-center gap-4 sm:gap-8">
             <a
-              href="https://github.com/Danielpark1239/"
+              href={"https://github.com/Danielpark1239/"}
               target="_blank"
               rel="noopener noreferrer"
               className="nav-link relative"
@@ -104,7 +105,7 @@ const Navbar: React.FC = () => {
               <span className="nav-link-hover"></span>
             </AnchorLink>
             <a
-              href="https://drive.google.com/file/d/1_DoICNEHUWFPdVpemkkMlgnw5ZjC1w3e/view?usp=sharing"
+              href={resumeLink}
               target="_blank"
               rel="noopener noreferrer"
               className="nav-link rounded border-solid border-2 p-1 z-1 border-gold text-gold hover:bg-gold hover:text-navy transition relative"
@@ -159,7 +160,7 @@ const Navbar: React.FC = () => {
                 <span className="nav-link-hover"></span>
               </AnchorLink>
               <a
-                href="https://drive.google.com/file/d/1_DoICNEHUWFPdVpemkkMlgnw5ZjC1w3e/view?usp=sharing"
+                href={resumeLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="nav-link rounded border-solid border-2 p-1 z-1 border-gold text-gold hover:bg-gold hover:text-navy transition relative"
