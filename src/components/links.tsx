@@ -1,6 +1,7 @@
 import React from "react"
 
 const Links: React.FC = () => {
+    const email = 'danieljhnpark@gmail.com'
     return (
         <nav>
         <div className="bg-navy hidden md:block relative">
@@ -14,7 +15,7 @@ const Links: React.FC = () => {
                         <i className="fab fa-linkedin text-3xl text-white hover:text-gold hover:scale-110 ease-in duration-300" title="LinkedIn"></i>
                         <span className="nav-link-hover"></span>
                     </a>
-                    <a href="mailto:danielpark1239@gmail.com" target="_blank" rel="noopener noreferrer" className="nav-link relative">
+                    <a href={'mailto:' + email} target="_blank" rel="noopener noreferrer" className="nav-link relative">
                         <i className="fas fa-envelope text-3xl text-white hover:text-gold hover:scale-110 ease-in duration-300" title="Email"></i>
                         <span className="nav-link-hover"></span>
                     </a>
