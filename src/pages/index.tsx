@@ -61,7 +61,7 @@ export default IndexPage
 
 export const Head: HeadFC = () => (
   <>
-    <title>Home Page</title>
+    <title>Daniel Park</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="https://kit.fontawesome.com/4d1a165625.js" crossOrigin="anonymous"></script>
   </>

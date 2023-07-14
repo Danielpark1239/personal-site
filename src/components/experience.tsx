@@ -13,9 +13,10 @@ const Experience: React.FC = () => {
           orgLink='https://www.jpmorganchase.com/'
           description='Consumer & Community Banking, Operations Technology'
           bullets={[
-            'Executing 2 core full-stack projects to streamline the creation of 200+ servicing modules over the next 5 years and standardize cross-cutting functionality through shared Java/JavaScript libraries, impacting over 40 teams.',
-            'Configured a CI/CD pipeline using Jenkins and AWS, ensuring efficient builds and deploys of Maven artifacts.',
-            'Collaborate with fellow interns and product owners in agile teams, driving progress through two-week sprints.'
+            'Executing two full-stack projects to streamline refactoring of 300 servicing modules handling 1 billion customer requests annually and standardize cross-cutting functionality through shared Java/JavaScript libraries.',
+            'Designed and shipped the React frontend and Spring Boot backend service layer for the main kickstart project.',
+            'Achieved 100% test coverage of the Java shared logging library and successfully configured CI/CD using Jenkins.',
+            'Collaborate with fellow interns in an agile team, providing guidance on various technologies and developer tools.'
           ]}
           skills={['TypeScript', 'React', 'Sass', 'Java', 'Node.js', 'Spring Boot', 'Maven', 'Jenkins']}
           hr
@@ -40,7 +41,7 @@ const Experience: React.FC = () => {
           orgLink='https://hoagie.io/'
           bullets={[
             'Develop a system of integrated campus applications utilizing shared UI elements and APIs, serving 5k+ students.',
-            'Spearheaded and shipped a scheduled send function for Hoagie Mail, impacting over 100 daily emails.',
+            'Spearheaded and shipped a scheduled send function for Hoagie Mail, impacting thousands of monthly emails.',
             'Implemented local development user mocking on top of auth0, streamlining the development and testing process.'
           ]}
           skills={['Next.js', 'TypeScript', 'Evergreen UI', 'Go', 'MongoDB', 'Netlify', 'Heroku']}
