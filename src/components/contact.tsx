@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Contact: React.FC = () => {
-  const email = 'danielpark1239@gmail.com'
+  const email = 'danieljhnpark@gmail.com'
   return (
     <div id='contact' className='w-screen grid grid-cols-11 md:grid-cols-8 xl:grid-cols-7 2xl:grid-cols-11 mb-16 bg-navy text-white h-auto '>
       <div className="col-span-9 col-start-2 md:col-span-6 md:col-start-2 xl:col-start-2 xl:col-span-5 2xl:col-start-3 2xl:col-span-7 container mt-2 text-lg text-lslate">
