@@ -7,15 +7,15 @@ const Experience: React.FC = () => {
       <div className="w-11/12 sm:w-10/12 md:w-3/4 lg:w-3/5">
         <h1 className="text-lg text-gold uppercase tracking-widest">Experience </h1>
         <ExperienceListing
-          dates='Jun 2023 - Present'
+          dates='Jun 2023 - Aug 2023'
           role='Software Engineer Intern'
           orgName='JPMorgan Chase & Co.'
           orgLink='https://www.jpmorganchase.com/'
           description='Consumer & Community Banking, Operations Technology'
           bullets={[
             'Executing two full-stack projects to streamline refactoring of 300 servicing modules handling 1 billion customer requests annually and standardize cross-cutting functionality through shared Java/JavaScript libraries.',
-            'Designed and shipped the React frontend and Spring Boot backend service layer for the main kickstart project.',
-            'Achieved 100% test coverage of the Java shared logging library and successfully configured CI/CD using Jenkins.',
+            'Designed and shipped the React frontend and Spring Boot REST controller for the main kickstart project.',
+            'Achieved 100% unit test coverage of the Java logging library using JUnit and the React UI using Jest and RTL.',
             'Collaborate with fellow interns in an agile team, providing guidance on various technologies and developer tools.'
           ]}
           skills={['TypeScript', 'React', 'Sass', 'Java', 'Node.js', 'Spring Boot', 'Maven', 'Jenkins']}
