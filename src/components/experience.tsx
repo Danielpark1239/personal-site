@@ -13,10 +13,10 @@ const Experience: React.FC = () => {
           orgLink='https://www.jpmorganchase.com/'
           description='Consumer & Community Banking, Operations Technology'
           bullets={[
-            'Executing two full-stack projects to streamline refactoring of 300 servicing modules handling 1 billion customer requests annually and standardize cross-cutting functionality through shared Java/JavaScript libraries.',
-            'Designed and shipped the React frontend and Spring Boot REST controller for the main kickstart project.',
-            'Achieved 100% unit test coverage of the Java logging library using JUnit and the React UI using Jest and RTL.',
-            'Collaborate with fellow interns in an agile team, providing guidance on various technologies and developer tools.'
+            'Delivered an internal tool using Java Spring and React to streamline monolith refactoring efforts, saving 100 developer hours per module with an estimated 300 modules to be created over the next five years.',
+            'Standardized cross-cutting logging functionality for 350+ engineers by launching a Java logging library.',
+            'Ensured seamless CI/CD integration by debugging the Jenkins build pipeline and expanding the test suite, achieving 100% unit test coverage of the logging library using JUnit/Mockito and the React UI using Jest/RTL.',
+            'Collaborated with five interns in an agile team, providing guidance on various technologies and developer tools.'
           ]}
           skills={['TypeScript', 'React', 'Sass', 'Java', 'Node.js', 'Spring Boot', 'Maven', 'Jenkins']}
           hr
