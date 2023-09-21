@@ -18,18 +18,6 @@ const Navbar: React.FC = () => {
           </div>
           <div className="flex md:hidden flex-row items-center gap-4 sm:gap-8">
             <a
-              href={"https://github.com/Danielpark1239/"}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="nav-link relative"
-            >
-              <i
-                className="fab fa-github text-3xl text-white hover:text-gold hover:scale-110 ease-in duration-300"
-                title="GitHub"
-              ></i>
-              <span className="nav-link-hover"></span>
-            </a>
-            <a
               href="https://www.linkedin.com/in/danieljungpark/"
               target="_blank"
               rel="noopener noreferrer"
@@ -38,6 +26,18 @@ const Navbar: React.FC = () => {
               <i
                 className="fab fa-linkedin text-3xl text-white hover:text-gold hover:scale-110 ease-in duration-300"
                 title="LinkedIn"
+              ></i>
+              <span className="nav-link-hover"></span>
+            </a>
+            <a
+              href={"https://github.com/Danielpark1239/"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav-link relative"
+            >
+              <i
+                className="fab fa-github text-3xl text-white hover:text-gold hover:scale-110 ease-in duration-300"
+                title="GitHub"
               ></i>
               <span className="nav-link-hover"></span>
             </a>

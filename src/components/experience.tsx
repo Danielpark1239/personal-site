@@ -14,11 +14,11 @@ const Experience: React.FC = () => {
           description='Consumer & Community Banking, Operations Technology'
           bullets={[
             'Delivered an internal tool using Java Spring and React to streamline monolith refactoring efforts, saving 100 developer hours per module with an estimated 300 modules to be created over the next five years.',
-            'Standardized cross-cutting logging functionality for 350+ engineers by launching a Java logging library.',
-            'Ensured seamless CI/CD integration by debugging the Jenkins build pipeline and expanding the test suite, achieving 100% unit test coverage of the logging library using JUnit/Mockito and the React UI using Jest/RTL.',
+            'Standardized cross-cutting logging functionality for 350 engineers by launching a Java logging library.',
+            'Ensured seamless CI/CD integration by debugging the Jenkins build pipeline and expanding test suites, achieving 100% unit test coverage of the logging library using JUnit/Mockito and the React frontend using Jest/RTL.',
             'Collaborated with five interns in an agile team, providing guidance on various technologies and developer tools.'
           ]}
-          skills={['TypeScript', 'React', 'Sass', 'Java', 'Node.js', 'Spring Boot', 'Maven', 'Jenkins']}
+          skills={['TypeScript', 'React', 'Sass', 'Java', 'Node.js', 'Spring Boot', 'Maven', 'AWS', 'Jenkins']}
           hr
         />
         <ExperienceListing
@@ -27,22 +27,22 @@ const Experience: React.FC = () => {
           orgName='TigerApps'
           orgLink='https://www.tigerapps.org'
           bullets={[
-            'Maintain and upgrade a suite of 15 campus applications that serve 5k+ students with 300k+ page views/month.',
-            'Leading efforts to onboard new applications and recruit junior developers, targeting a team size of 2x.',
-            'Collaborate with the Office of the Dean of Undergraduate Students (ODUS) to secure club funding.'
+            'Maintain and upgrade a suite of 16 campus applications, serving 20K unique users with 10M requests monthly',
+            'Leading efforts to onboard new applications for the fall and recruit junior developers, increasing team size by 2x.',
+            'Collaborate with the Office of the Dean of Undergraduate Students (ODUS) to secure funding for hosting costs.'
           ]}
           skills={['Flask', 'Django', 'Node.js', 'React', 'JavaScript', 'HTML/CSS', 'Heroku', 'PostgreSQL', 'MongoDB']}
           hr
         />
         <ExperienceListing
           dates='Sep 2022 - Present'
-          role='Software Developer'
-          orgName='Hoagie Club'
+          role='Software Engineer'
+          orgName='Hoagie.io'
           orgLink='https://hoagie.io/'
           bullets={[
-            'Develop a system of integrated campus applications utilizing shared UI elements and APIs, serving 5k+ students.',
+            'Develop a system of integrated campus applications utilizing shared UI elements and APIs, serving 5,000+ students.',
             'Spearheaded and shipped a scheduled send function for Hoagie Mail, impacting thousands of monthly emails.',
-            'Implemented local development user mocking on top of auth0, streamlining the development and testing process.'
+            'Implemented local development user mocking on top of Auth0, streamlining the development and testing process.'
           ]}
           skills={['Next.js', 'TypeScript', 'Evergreen UI', 'Go', 'MongoDB', 'Netlify', 'Heroku']}
           hr

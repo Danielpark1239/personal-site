@@ -10,7 +10,8 @@ const About: React.FC = () => {
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-lslate mb-2 md:mb-5">I'm a full-stack developer.</h1>
         <div className="text-m md:text-lg text-lslate w-11/12 md:w-4/5 lg:w-3/5 2xl:w-1/2 break-words">
           I'm an undergraduate at Princeton University interested in
-          <span className="text-white hover:text-gold ease-in duration-300"> full-stack web development </span> and
+          <span className="text-white hover:text-gold ease-in duration-300"> full-stack web development, </span>
+          <span className="text-white hover:text-gold ease-in duration-300"> distributed systems, </span> and
           <span className="text-white hover:text-gold ease-in duration-300"> machine learning. </span>
           I'm graduating in May 2024 and am looking for full-time software engineering roles.
           Let's connect!
