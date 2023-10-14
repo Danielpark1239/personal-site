@@ -28,10 +28,10 @@ const Experience: React.FC = () => {
           orgLink='https://www.tigerapps.org'
           bullets={[
             'Maintain and upgrade a suite of 16 campus applications, serving 20K unique users with 10M requests monthly',
-            'Leading efforts to onboard new applications for the fall and recruit junior developers, increasing team size by 2x.',
+            'Led efforts to onboard new applications for the fall and recruit junior developers, increasing team size by 150%.',
             'Collaborate with the Office of the Dean of Undergraduate Students (ODUS) to secure funding for hosting costs.'
           ]}
-          skills={['Flask', 'Django', 'Node.js', 'React', 'JavaScript', 'HTML/CSS', 'Heroku', 'PostgreSQL', 'MongoDB']}
+          skills={['Flask', 'Django', 'Node.js', 'React', 'JavaScript', 'HTML/CSS', 'Heroku', 'PostgreSQL', 'MongoDB', 'AWS']}
           hr
         />
         <ExperienceListing
